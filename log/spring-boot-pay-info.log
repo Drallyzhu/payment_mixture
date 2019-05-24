@@ -1,0 +1,680 @@
+2019-05-23 10:59:23.347 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:50  - Starting PaymentMixtureApplication on Drally with PID 10920 (F:\IdeaProjects\yunruan\payment_mixture\target\classes started by Drally in F:\IdeaProjects\yunruan\payment_mixture)
+2019-05-23 10:59:23.404 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:679 - The following profiles are active: dev
+2019-05-23 10:59:26.540 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2019-05-23 10:59:26.618 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2019-05-23 10:59:26.619 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 10:59:26.808 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring embedded WebApplicationContext
+2019-05-23 10:59:26.809 INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 3271 ms
+2019-05-23 10:59:27.450 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-23 10:59:27.597 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 10:59:27.725 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:40  - 自定义静态资源目录,这只是个Demo,生产肯定不会暴露
+2019-05-23 10:59:27.841 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Line:56  - Adding welcome page: class path resource [templates/index.html]
+2019-05-23 10:59:28.055 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2019-05-23 10:59:28.097 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 4 custom documentation plugin(s)
+2019-05-23 10:59:28.144 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 10:59:28.166 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 10:59:28.174 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 10:59:28.180 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 10:59:28.226 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:204 - Tomcat started on port(s): 8080 (http) with context path '/payment_mixture'
+2019-05-23 10:59:28.230 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:59  - Started PaymentMixtureApplication in 6.68 seconds (JVM running for 10.33)
+2019-05-23 10:59:28.335 INFO  com.alipay.demo.trade.config.Configs Line:78  - 配置文件名: zfbinfo.properties
+2019-05-23 10:59:28.336 INFO  com.alipay.demo.trade.config.Configs Line:79  - Configs{支付宝openapi网关: https://openapi.alipaydev.com/gateway.do
+, 支付宝mcloudapi网关域名: http://mcloudmonitor.com/gateway.do
+, pid: 2088102176665657
+, appid: 2016092100564976
+, 商户RSA私钥: MIIEvg******af+xHb
+, 商户RSA公钥: MIIBIj******IDAQAB
+, 支付宝RSA公钥: MIIBIj******IDAQAB
+, 签名类型: RSA2
+, 查询重试次数: 5
+, 查询间隔(毫秒): 5000
+, 撤销尝试次数: 3
+, 撤销重试间隔(毫秒): 2000
+, 交易保障调度延迟(秒): 5
+, 交易保障调度间隔(秒): 900
+}
+2019-05-23 10:59:28.360 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:208 - 从classpath: /F:/IdeaProjects/yunruan/payment_mixture/target/classes/ 获取属性文件acp_sdk.properties
+2019-05-23 10:59:28.376 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:244 - 开始从属性文件中加载配置项
+2019-05-23 10:59:28.377 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:249 - 单证书模式，使用配置文件配置的私钥签名证书，SingleCertMode:[true]
+2019-05-23 10:59:28.377 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:255 - 配置项：私钥签名证书路径==>acpsdk.signCert.path==>D:/assets/acp_test_sign.pfx 已加载
+2019-05-23 10:59:28.378 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:260 - 配置项：私钥签名证书密码==>acpsdk.signCert.pwd 已加载
+2019-05-23 10:59:28.378 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:265 - 配置项：私钥签名证书类型==>acpsdk.signCert.type==>PKCS12 已加载
+2019-05-23 10:59:28.378 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:275 - 配置项：敏感信息加密证书==>acpsdk.encryptCert.path==>D:/assets/acp_test_enc.cer 已加载
+2019-05-23 10:59:28.378 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:280 - 配置项：验证签名证书路径(这里配置的是目录，不要指定到公钥文件)==>acpsdk.validateCert.dir==>D:/assets/ 已加载
+2019-05-23 10:59:28.379 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:46  - 支付项目启动 
+2019-05-23 11:05:08.592 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 11:05:08.593 INFO  org.springframework.web.servlet.DispatcherServlet Line:524 - Initializing Servlet 'dispatcherServlet'
+2019-05-23 11:05:08.603 INFO  org.springframework.web.servlet.DispatcherServlet Line:546 - Completed initialization in 10 ms
+2019-05-23 11:05:48.834 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 11:05:48.835 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 11:06:14.851 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:51  - 电脑支付
+2019-05-23 11:06:14.852 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:277 - 支付宝PC支付下单
+2019-05-23 11:06:15.122 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:296 - 业务参数:{'out_trade_no':'201952311542441','total_amount':'0.01','subject':'科帮网测试支付','seller_id':'2088102176665657','product_code':'FAST_INSTANT_TRADE_PAY','body':'两个苹果五毛钱','qr_pay_mode':'2'}
+2019-05-23 11:08:13.542 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-23 11:08:18.657 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:50  - Starting PaymentMixtureApplication on Drally with PID 4988 (F:\IdeaProjects\yunruan\payment_mixture\target\classes started by Drally in F:\IdeaProjects\yunruan\payment_mixture)
+2019-05-23 11:08:18.662 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:679 - The following profiles are active: dev
+2019-05-23 11:08:19.881 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2019-05-23 11:08:19.904 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2019-05-23 11:08:19.905 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 11:08:20.053 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring embedded WebApplicationContext
+2019-05-23 11:08:20.053 INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 1339 ms
+2019-05-23 11:08:20.402 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-23 11:08:20.505 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 11:08:20.565 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:40  - 自定义静态资源目录,这只是个Demo,生产肯定不会暴露
+2019-05-23 11:08:20.680 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Line:56  - Adding welcome page: class path resource [templates/index.html]
+2019-05-23 11:08:20.759 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2019-05-23 11:08:20.776 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 4 custom documentation plugin(s)
+2019-05-23 11:08:20.813 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:08:20.834 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:08:20.842 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:08:20.852 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:08:20.885 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:204 - Tomcat started on port(s): 8080 (http) with context path '/payment_mixture'
+2019-05-23 11:08:20.888 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:59  - Started PaymentMixtureApplication in 3.073 seconds (JVM running for 4.681)
+2019-05-23 11:08:20.914 INFO  com.alipay.demo.trade.config.Configs Line:78  - 配置文件名: zfbinfo.properties
+2019-05-23 11:08:20.914 INFO  com.alipay.demo.trade.config.Configs Line:79  - Configs{支付宝openapi网关: https://openapi.alipaydev.com/gateway.do
+, 支付宝mcloudapi网关域名: http://mcloudmonitor.com/gateway.do
+, pid: 2088102176665657
+, appid: 2016092100564976
+, 商户RSA私钥: MIIEvg******af+xHb
+, 商户RSA公钥: MIIBIj******IDAQAB
+, 支付宝RSA公钥: MIIBIj******IDAQAB
+, 签名类型: RSA2
+, 查询重试次数: 5
+, 查询间隔(毫秒): 5000
+, 撤销尝试次数: 3
+, 撤销重试间隔(毫秒): 2000
+, 交易保障调度延迟(秒): 5
+, 交易保障调度间隔(秒): 900
+}
+2019-05-23 11:08:20.918 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:208 - 从classpath: /F:/IdeaProjects/yunruan/payment_mixture/target/classes/ 获取属性文件acp_sdk.properties
+2019-05-23 11:08:20.918 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:244 - 开始从属性文件中加载配置项
+2019-05-23 11:08:20.919 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:249 - 单证书模式，使用配置文件配置的私钥签名证书，SingleCertMode:[true]
+2019-05-23 11:08:20.919 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:255 - 配置项：私钥签名证书路径==>acpsdk.signCert.path==>D:/assets/acp_test_sign.pfx 已加载
+2019-05-23 11:08:20.919 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:260 - 配置项：私钥签名证书密码==>acpsdk.signCert.pwd 已加载
+2019-05-23 11:08:20.919 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:265 - 配置项：私钥签名证书类型==>acpsdk.signCert.type==>PKCS12 已加载
+2019-05-23 11:08:20.920 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:275 - 配置项：敏感信息加密证书==>acpsdk.encryptCert.path==>D:/assets/acp_test_enc.cer 已加载
+2019-05-23 11:08:20.920 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:280 - 配置项：验证签名证书路径(这里配置的是目录，不要指定到公钥文件)==>acpsdk.validateCert.dir==>D:/assets/ 已加载
+2019-05-23 11:08:20.920 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:46  - 支付项目启动 
+2019-05-23 11:12:30.667 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 11:12:30.668 INFO  org.springframework.web.servlet.DispatcherServlet Line:524 - Initializing Servlet 'dispatcherServlet'
+2019-05-23 11:12:30.675 INFO  org.springframework.web.servlet.DispatcherServlet Line:546 - Completed initialization in 6 ms
+2019-05-23 11:12:47.099 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:51  - 电脑支付
+2019-05-23 11:12:47.100 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:277 - 支付宝PC支付下单
+2019-05-23 11:12:47.135 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:296 - 业务参数:{'out_trade_no':'201952311123321','total_amount':'0.01','subject':'科帮网测试支付','seller_id':'2088102176665657','product_code':'FAST_INSTANT_TRADE_PAY','body':'两个苹果五毛钱','qr_pay_mode':'2'}
+2019-05-23 11:13:28.577 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:119 - 支付宝验证签名成功！
+2019-05-23 11:13:28.578 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:133 - (支付宝订单号:201952311123321付款成功)
+2019-05-23 11:13:41.465 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:184 - 订单号201952311123321验证签名结果[失败].
+2019-05-23 11:13:54.865 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 11:13:54.866 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 11:15:09.784 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 11:15:09.785 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 11:27:14.416 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-23 11:27:22.027 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:50  - Starting PaymentMixtureApplication on Drally with PID 14600 (F:\IdeaProjects\yunruan\payment_mixture\target\classes started by Drally in F:\IdeaProjects\yunruan\payment_mixture)
+2019-05-23 11:27:22.032 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:679 - The following profiles are active: dev
+2019-05-23 11:27:23.337 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2019-05-23 11:27:23.360 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2019-05-23 11:27:23.361 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 11:27:23.500 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring embedded WebApplicationContext
+2019-05-23 11:27:23.501 INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 1417 ms
+2019-05-23 11:27:23.864 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-23 11:27:23.973 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 11:27:24.033 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:40  - 自定义静态资源目录,这只是个Demo,生产肯定不会暴露
+2019-05-23 11:27:24.086 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Line:56  - Adding welcome page: class path resource [templates/index.html]
+2019-05-23 11:27:24.227 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2019-05-23 11:27:24.244 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 4 custom documentation plugin(s)
+2019-05-23 11:27:24.278 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:27:24.299 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:27:24.306 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:27:24.315 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:27:24.348 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:204 - Tomcat started on port(s): 8080 (http) with context path '/payment_mixture'
+2019-05-23 11:27:24.352 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:59  - Started PaymentMixtureApplication in 3.152 seconds (JVM running for 4.72)
+2019-05-23 11:27:24.377 INFO  com.alipay.demo.trade.config.Configs Line:78  - 配置文件名: zfbinfo.properties
+2019-05-23 11:27:24.377 INFO  com.alipay.demo.trade.config.Configs Line:79  - Configs{支付宝openapi网关: https://openapi.alipaydev.com/gateway.do
+, 支付宝mcloudapi网关域名: http://mcloudmonitor.com/gateway.do
+, pid: 2088102176665657
+, appid: 2016092100564976
+, 商户RSA私钥: MIIEvg******af+xHb
+, 商户RSA公钥: MIIBIj******IDAQAB
+, 支付宝RSA公钥: MIIBIj******IDAQAB
+, 签名类型: RSA2
+, 查询重试次数: 5
+, 查询间隔(毫秒): 5000
+, 撤销尝试次数: 3
+, 撤销重试间隔(毫秒): 2000
+, 交易保障调度延迟(秒): 5
+, 交易保障调度间隔(秒): 900
+}
+2019-05-23 11:27:24.380 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:208 - 从classpath: /F:/IdeaProjects/yunruan/payment_mixture/target/classes/ 获取属性文件acp_sdk.properties
+2019-05-23 11:27:24.381 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:244 - 开始从属性文件中加载配置项
+2019-05-23 11:27:24.381 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:249 - 单证书模式，使用配置文件配置的私钥签名证书，SingleCertMode:[true]
+2019-05-23 11:27:24.382 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:255 - 配置项：私钥签名证书路径==>acpsdk.signCert.path==>D:/assets/acp_test_sign.pfx 已加载
+2019-05-23 11:27:24.382 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:260 - 配置项：私钥签名证书密码==>acpsdk.signCert.pwd 已加载
+2019-05-23 11:27:24.382 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:265 - 配置项：私钥签名证书类型==>acpsdk.signCert.type==>PKCS12 已加载
+2019-05-23 11:27:24.382 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:275 - 配置项：敏感信息加密证书==>acpsdk.encryptCert.path==>D:/assets/acp_test_enc.cer 已加载
+2019-05-23 11:27:24.383 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:280 - 配置项：验证签名证书路径(这里配置的是目录，不要指定到公钥文件)==>acpsdk.validateCert.dir==>D:/assets/ 已加载
+2019-05-23 11:27:24.383 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:46  - 支付项目启动 
+2019-05-23 11:28:01.598 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 11:28:01.598 INFO  org.springframework.web.servlet.DispatcherServlet Line:524 - Initializing Servlet 'dispatcherServlet'
+2019-05-23 11:28:01.606 INFO  org.springframework.web.servlet.DispatcherServlet Line:546 - Completed initialization in 7 ms
+2019-05-23 11:28:01.659 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 11:28:01.659 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 11:28:05.926 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=ZBe9Ip6+7BGhxjLVXQ6vcWhyI6003EOUeGlVEKb4nxr6M6WIt8HkCF/zjIoYP9pt3wqfQxcgsRPwsYyXELeJ3VAXrbjow7c7/g46ESUfJRYUk6RGa0yZqigHRS6CiKnrPDxdD9ocu4kbEKL3V86i/Tc0nHhr2xXtmcijcxZGZsRGroPHqonZ5SpQ4n5C5QrwksmhZeqvVCZzf2yZ6mnoLuXEcHF3GsxNj8Ql4lu0z4FLrIcqbWEpcFurYqcC0k15Ds58zLnpzGmSdqho45E+Wj2+wSzJfkjXyc0poualPdpt5XQ/M3EPi3M11MxPs06BYrm1OudHJLkLpskYyCDKbw==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 11:28:04^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123321"}^_^833ms,547ms,23ms
+2019-05-23 11:37:48.060 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:51  - 电脑支付
+2019-05-23 11:37:48.061 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:277 - 支付宝PC支付下单
+2019-05-23 11:37:48.107 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:296 - 业务参数:{'out_trade_no':'201952311123322','total_amount':'0.02','subject':'科帮网测试支付','seller_id':'2088102176665657','product_code':'FAST_INSTANT_TRADE_PAY','body':'两个苹果五毛钱','qr_pay_mode':'2'}
+2019-05-23 11:38:19.753 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:119 - 支付宝验证签名成功！
+2019-05-23 11:38:19.754 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:133 - (支付宝订单号:201952311123322付款成功)
+2019-05-23 11:38:35.294 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:184 - 订单号201952311123322验证签名结果[失败].
+2019-05-23 11:38:47.927 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 11:38:47.928 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 11:38:51.333 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=k2Mdr6K3ejVxUNIzApvLBd7++hRMf34by3eJ2ob4GAfsOXhtijqPZwHGp6iV5U49DBL0df+Ki6e4Bjl+5pzs1ppIMN0l+yOcDG352n0+3qK43lIHoquFIoy6i6tE/hdSpWkfam8euD/NiuvOIfea9uSMFY2vqYNp/+Hi/DPi+jfDH+2gfCeStkDuoUwOHRFTShoyt51qlxYSDAq4TcbEeKBqJX4MhvsFRD+BdVEMBHiqk/8nKXOxQsoo2VOzYhqL9ndXpM38noO91MvWHNYYp+3zSXPntDtmOpaIaHRtONO1EEtEh7RmI1g7cNF8GItxv1p2ubvlQW8B6vBbLibOIA==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 11:38:50^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^17ms,415ms,5ms
+2019-05-23 11:56:17.927 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-23 11:56:23.158 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:50  - Starting PaymentMixtureApplication on Drally with PID 16616 (F:\IdeaProjects\yunruan\payment_mixture\target\classes started by Drally in F:\IdeaProjects\yunruan\payment_mixture)
+2019-05-23 11:56:23.163 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:679 - The following profiles are active: dev
+2019-05-23 11:56:24.481 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2019-05-23 11:56:24.502 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2019-05-23 11:56:24.503 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 11:56:24.646 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring embedded WebApplicationContext
+2019-05-23 11:56:24.647 INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 1430 ms
+2019-05-23 11:56:24.995 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-23 11:56:25.108 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 11:56:25.170 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:40  - 自定义静态资源目录,这只是个Demo,生产肯定不会暴露
+2019-05-23 11:56:25.222 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Line:56  - Adding welcome page: class path resource [templates/index.html]
+2019-05-23 11:56:25.361 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2019-05-23 11:56:25.378 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 4 custom documentation plugin(s)
+2019-05-23 11:56:25.412 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:56:25.432 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:56:25.441 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:56:25.448 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:56:25.482 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:204 - Tomcat started on port(s): 8080 (http) with context path '/payment_mixture'
+2019-05-23 11:56:25.485 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:59  - Started PaymentMixtureApplication in 3.184 seconds (JVM running for 4.665)
+2019-05-23 11:56:25.511 INFO  com.alipay.demo.trade.config.Configs Line:78  - 配置文件名: zfbinfo.properties
+2019-05-23 11:56:25.511 INFO  com.alipay.demo.trade.config.Configs Line:79  - Configs{支付宝openapi网关: https://openapi.alipaydev.com/gateway.do
+, 支付宝mcloudapi网关域名: http://mcloudmonitor.com/gateway.do
+, pid: 2088102176665657
+, appid: 2016092100564976
+, 商户RSA私钥: MIIEvg******af+xHb
+, 商户RSA公钥: MIIBIj******IDAQAB
+, 支付宝RSA公钥: MIIBIj******IDAQAB
+, 签名类型: RSA2
+, 查询重试次数: 5
+, 查询间隔(毫秒): 5000
+, 撤销尝试次数: 3
+, 撤销重试间隔(毫秒): 2000
+, 交易保障调度延迟(秒): 5
+, 交易保障调度间隔(秒): 900
+}
+2019-05-23 11:56:25.514 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:208 - 从classpath: /F:/IdeaProjects/yunruan/payment_mixture/target/classes/ 获取属性文件acp_sdk.properties
+2019-05-23 11:56:25.515 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:244 - 开始从属性文件中加载配置项
+2019-05-23 11:56:25.516 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:249 - 单证书模式，使用配置文件配置的私钥签名证书，SingleCertMode:[true]
+2019-05-23 11:56:25.516 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:255 - 配置项：私钥签名证书路径==>acpsdk.signCert.path==>D:/assets/acp_test_sign.pfx 已加载
+2019-05-23 11:56:25.517 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:260 - 配置项：私钥签名证书密码==>acpsdk.signCert.pwd 已加载
+2019-05-23 11:56:25.517 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:265 - 配置项：私钥签名证书类型==>acpsdk.signCert.type==>PKCS12 已加载
+2019-05-23 11:56:25.517 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:275 - 配置项：敏感信息加密证书==>acpsdk.encryptCert.path==>D:/assets/acp_test_enc.cer 已加载
+2019-05-23 11:56:25.517 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:280 - 配置项：验证签名证书路径(这里配置的是目录，不要指定到公钥文件)==>acpsdk.validateCert.dir==>D:/assets/ 已加载
+2019-05-23 11:56:25.518 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:46  - 支付项目启动 
+2019-05-23 11:56:37.088 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 11:56:37.089 INFO  org.springframework.web.servlet.DispatcherServlet Line:524 - Initializing Servlet 'dispatcherServlet'
+2019-05-23 11:56:37.095 INFO  org.springframework.web.servlet.DispatcherServlet Line:546 - Completed initialization in 5 ms
+2019-05-23 11:56:37.148 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 11:56:37.148 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 11:56:42.676 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=P0DyDwf8pkIVAisGWcJRzlZKE95Sm4vZ6qPoqMrqALUx5m1pX38m3bpqal3CcEMQhVJ8xm09xe12Yd34tmxTdOr7M0YFNLyOkA3FNe87eSAkPtTRx6RA8Bj73xcKtLpzjvZfCSUm/2tmYzPXaTo57BFVjdsohUKalSvZZ/EG1lw0XJHv9ODfAzAXubvIBVOR93ktHdddc9BLsKGwcDuaJUVc9OLkk4Nm+8ym3nAkb9khKypMhYXCrMI4xVCO6KuuV0l4oRVp19AT7IKxL2YTgZ11C0jP1C0j+66mS4vXWoV7mHIE5jNXOrn/uG1hPUdvtnG8UTUj6oiRM66UZMn4sQ==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 11:56:41^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^821ms,756ms,21ms
+2019-05-23 11:58:49.539 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-23 11:58:54.256 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:50  - Starting PaymentMixtureApplication on Drally with PID 3272 (F:\IdeaProjects\yunruan\payment_mixture\target\classes started by Drally in F:\IdeaProjects\yunruan\payment_mixture)
+2019-05-23 11:58:54.260 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:679 - The following profiles are active: dev
+2019-05-23 11:58:55.455 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2019-05-23 11:58:55.478 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2019-05-23 11:58:55.479 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 11:58:55.618 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring embedded WebApplicationContext
+2019-05-23 11:58:55.618 INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 1312 ms
+2019-05-23 11:58:55.984 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-23 11:58:56.093 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 11:58:56.151 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:40  - 自定义静态资源目录,这只是个Demo,生产肯定不会暴露
+2019-05-23 11:58:56.207 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Line:56  - Adding welcome page: class path resource [templates/index.html]
+2019-05-23 11:58:56.347 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2019-05-23 11:58:56.365 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 4 custom documentation plugin(s)
+2019-05-23 11:58:56.398 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:58:56.419 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:58:56.426 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:58:56.434 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 11:58:56.469 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:204 - Tomcat started on port(s): 8080 (http) with context path '/payment_mixture'
+2019-05-23 11:58:56.474 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:59  - Started PaymentMixtureApplication in 3.027 seconds (JVM running for 4.516)
+2019-05-23 11:58:56.500 INFO  com.alipay.demo.trade.config.Configs Line:78  - 配置文件名: zfbinfo.properties
+2019-05-23 11:58:56.500 INFO  com.alipay.demo.trade.config.Configs Line:79  - Configs{支付宝openapi网关: https://openapi.alipaydev.com/gateway.do
+, 支付宝mcloudapi网关域名: http://mcloudmonitor.com/gateway.do
+, pid: 2088102176665657
+, appid: 2016092100564976
+, 商户RSA私钥: MIIEvg******af+xHb
+, 商户RSA公钥: MIIBIj******IDAQAB
+, 支付宝RSA公钥: MIIBIj******IDAQAB
+, 签名类型: RSA2
+, 查询重试次数: 5
+, 查询间隔(毫秒): 5000
+, 撤销尝试次数: 3
+, 撤销重试间隔(毫秒): 2000
+, 交易保障调度延迟(秒): 5
+, 交易保障调度间隔(秒): 900
+}
+2019-05-23 11:58:56.503 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:208 - 从classpath: /F:/IdeaProjects/yunruan/payment_mixture/target/classes/ 获取属性文件acp_sdk.properties
+2019-05-23 11:58:56.504 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:244 - 开始从属性文件中加载配置项
+2019-05-23 11:58:56.505 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:249 - 单证书模式，使用配置文件配置的私钥签名证书，SingleCertMode:[true]
+2019-05-23 11:58:56.505 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:255 - 配置项：私钥签名证书路径==>acpsdk.signCert.path==>D:/assets/acp_test_sign.pfx 已加载
+2019-05-23 11:58:56.505 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:260 - 配置项：私钥签名证书密码==>acpsdk.signCert.pwd 已加载
+2019-05-23 11:58:56.505 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:265 - 配置项：私钥签名证书类型==>acpsdk.signCert.type==>PKCS12 已加载
+2019-05-23 11:58:56.506 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:275 - 配置项：敏感信息加密证书==>acpsdk.encryptCert.path==>D:/assets/acp_test_enc.cer 已加载
+2019-05-23 11:58:56.506 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:280 - 配置项：验证签名证书路径(这里配置的是目录，不要指定到公钥文件)==>acpsdk.validateCert.dir==>D:/assets/ 已加载
+2019-05-23 11:58:56.506 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:46  - 支付项目启动 
+2019-05-23 11:59:10.782 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 11:59:10.783 INFO  org.springframework.web.servlet.DispatcherServlet Line:524 - Initializing Servlet 'dispatcherServlet'
+2019-05-23 11:59:10.789 INFO  org.springframework.web.servlet.DispatcherServlet Line:546 - Completed initialization in 5 ms
+2019-05-23 11:59:10.848 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 11:59:10.849 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 11:59:12.175 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=WfNjsHmr5Lk212IgylcuBEStj2NctTHBZdhd3XywjEgF5E5cuvNiyYL+/PJ22KJagbG2RDrwvLh7e6L2K360DZEjQPQSjjz07e5S3FF+8+5T5dyGT31y2EWUtVKQHQmK16XfBjb743r3RrUerG1MU5fDNgJl4Rf8xL68dZUBVzr9U2ernjL/z9DMr7RsOWSExTMq9WNDDg7+LW1zyUjsyCTXbJyVLuxwBzkD7zj3DA5QvBbpOKX99+P7b0KSh2GlRz0Jm8S6hVY1Xbw+YyX73BrQpaPkfXPvHepX4icw5q3gL/o9JkB0xGql5CdN07bx/MRxBeQDib4QUW47lNgl6A==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 11:59:10^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^813ms,482ms,19ms
+2019-05-23 12:01:17.008 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-23 12:01:21.506 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:50  - Starting PaymentMixtureApplication on Drally with PID 11832 (F:\IdeaProjects\yunruan\payment_mixture\target\classes started by Drally in F:\IdeaProjects\yunruan\payment_mixture)
+2019-05-23 12:01:21.510 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:679 - The following profiles are active: dev
+2019-05-23 12:01:22.781 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2019-05-23 12:01:22.804 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2019-05-23 12:01:22.804 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 12:01:22.948 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring embedded WebApplicationContext
+2019-05-23 12:01:22.948 INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 1393 ms
+2019-05-23 12:01:23.349 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-23 12:01:23.470 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 12:01:23.548 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:40  - 自定义静态资源目录,这只是个Demo,生产肯定不会暴露
+2019-05-23 12:01:23.618 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Line:56  - Adding welcome page: class path resource [templates/index.html]
+2019-05-23 12:01:23.765 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2019-05-23 12:01:23.784 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 4 custom documentation plugin(s)
+2019-05-23 12:01:23.824 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 12:01:23.847 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 12:01:23.856 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 12:01:23.863 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 12:01:23.904 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:204 - Tomcat started on port(s): 8080 (http) with context path '/payment_mixture'
+2019-05-23 12:01:23.908 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:59  - Started PaymentMixtureApplication in 3.167 seconds (JVM running for 4.634)
+2019-05-23 12:01:23.938 INFO  com.alipay.demo.trade.config.Configs Line:78  - 配置文件名: zfbinfo.properties
+2019-05-23 12:01:23.938 INFO  com.alipay.demo.trade.config.Configs Line:79  - Configs{支付宝openapi网关: https://openapi.alipaydev.com/gateway.do
+, 支付宝mcloudapi网关域名: http://mcloudmonitor.com/gateway.do
+, pid: 2088102176665657
+, appid: 2016092100564976
+, 商户RSA私钥: MIIEvg******af+xHb
+, 商户RSA公钥: MIIBIj******IDAQAB
+, 支付宝RSA公钥: MIIBIj******IDAQAB
+, 签名类型: RSA2
+, 查询重试次数: 5
+, 查询间隔(毫秒): 5000
+, 撤销尝试次数: 3
+, 撤销重试间隔(毫秒): 2000
+, 交易保障调度延迟(秒): 5
+, 交易保障调度间隔(秒): 900
+}
+2019-05-23 12:01:23.942 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:208 - 从classpath: /F:/IdeaProjects/yunruan/payment_mixture/target/classes/ 获取属性文件acp_sdk.properties
+2019-05-23 12:01:23.942 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:244 - 开始从属性文件中加载配置项
+2019-05-23 12:01:23.943 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:249 - 单证书模式，使用配置文件配置的私钥签名证书，SingleCertMode:[true]
+2019-05-23 12:01:23.943 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:255 - 配置项：私钥签名证书路径==>acpsdk.signCert.path==>D:/assets/acp_test_sign.pfx 已加载
+2019-05-23 12:01:23.943 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:260 - 配置项：私钥签名证书密码==>acpsdk.signCert.pwd 已加载
+2019-05-23 12:01:23.943 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:265 - 配置项：私钥签名证书类型==>acpsdk.signCert.type==>PKCS12 已加载
+2019-05-23 12:01:23.944 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:275 - 配置项：敏感信息加密证书==>acpsdk.encryptCert.path==>D:/assets/acp_test_enc.cer 已加载
+2019-05-23 12:01:23.944 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:280 - 配置项：验证签名证书路径(这里配置的是目录，不要指定到公钥文件)==>acpsdk.validateCert.dir==>D:/assets/ 已加载
+2019-05-23 12:01:23.944 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:46  - 支付项目启动 
+2019-05-23 12:01:53.515 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 12:01:53.516 INFO  org.springframework.web.servlet.DispatcherServlet Line:524 - Initializing Servlet 'dispatcherServlet'
+2019-05-23 12:01:53.523 INFO  org.springframework.web.servlet.DispatcherServlet Line:546 - Completed initialization in 7 ms
+2019-05-23 12:01:53.598 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 12:01:53.598 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 12:01:55.054 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=ZFPKAte6AOM465bLTwnWb3FyVc6gbG6weBrYptwkhQUSHx1jhgOu8HpHwvpo7IeGD5Ooc0O6gLQzijke2pnZ2D9o+rhdRFoHvNPx0QHvwOhVznVMkfHf1BAETpN9rL5p5Hyl+32L5RUjEvN43zNaXOZQjsQ5ssj8OTw74me1ANzh3rEgKS9I/1tcIZtF8zy9bRjp20P+ie6O4UNEDzAF1qhSyWZ0uGUQ4KGpFGaCDo98DLCLanfGarQEi0pe+219WbGNI69Kzbva91WLg60c245ab9ltScN4zlhd0qbElWu5qmr4hWIgMzSIUPP3Wen+LxBocVbz6pzI29d1NeRbyQ==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 12:01:53^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^863ms,558ms,21ms
+2019-05-23 14:03:36.312 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-23 14:03:41.522 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:50  - Starting PaymentMixtureApplication on Drally with PID 14496 (F:\IdeaProjects\yunruan\payment_mixture\target\classes started by Drally in F:\IdeaProjects\yunruan\payment_mixture)
+2019-05-23 14:03:41.527 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:679 - The following profiles are active: dev
+2019-05-23 14:03:42.827 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2019-05-23 14:03:42.849 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2019-05-23 14:03:42.850 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 14:03:42.991 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring embedded WebApplicationContext
+2019-05-23 14:03:42.991 INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 1412 ms
+2019-05-23 14:03:43.355 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-23 14:03:43.481 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 14:03:43.579 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:40  - 自定义静态资源目录,这只是个Demo,生产肯定不会暴露
+2019-05-23 14:03:43.719 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Line:56  - Adding welcome page: class path resource [templates/index.html]
+2019-05-23 14:03:43.800 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2019-05-23 14:03:43.817 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 4 custom documentation plugin(s)
+2019-05-23 14:03:43.851 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:03:43.870 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:03:43.877 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:03:43.885 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:03:43.917 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:204 - Tomcat started on port(s): 8080 (http) with context path '/payment_mixture'
+2019-05-23 14:03:43.920 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:59  - Started PaymentMixtureApplication in 3.179 seconds (JVM running for 4.76)
+2019-05-23 14:03:43.945 INFO  com.alipay.demo.trade.config.Configs Line:78  - 配置文件名: zfbinfo.properties
+2019-05-23 14:03:43.946 INFO  com.alipay.demo.trade.config.Configs Line:79  - Configs{支付宝openapi网关: https://openapi.alipaydev.com/gateway.do
+, 支付宝mcloudapi网关域名: http://mcloudmonitor.com/gateway.do
+, pid: 2088102176665657
+, appid: 2016092100564976
+, 商户RSA私钥: MIIEvg******af+xHb
+, 商户RSA公钥: MIIBIj******IDAQAB
+, 支付宝RSA公钥: MIIBIj******IDAQAB
+, 签名类型: RSA2
+, 查询重试次数: 5
+, 查询间隔(毫秒): 5000
+, 撤销尝试次数: 3
+, 撤销重试间隔(毫秒): 2000
+, 交易保障调度延迟(秒): 5
+, 交易保障调度间隔(秒): 900
+}
+2019-05-23 14:03:43.948 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:208 - 从classpath: /F:/IdeaProjects/yunruan/payment_mixture/target/classes/ 获取属性文件acp_sdk.properties
+2019-05-23 14:03:43.949 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:244 - 开始从属性文件中加载配置项
+2019-05-23 14:03:43.950 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:249 - 单证书模式，使用配置文件配置的私钥签名证书，SingleCertMode:[true]
+2019-05-23 14:03:43.950 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:255 - 配置项：私钥签名证书路径==>acpsdk.signCert.path==>D:/assets/acp_test_sign.pfx 已加载
+2019-05-23 14:03:43.950 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:260 - 配置项：私钥签名证书密码==>acpsdk.signCert.pwd 已加载
+2019-05-23 14:03:43.951 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:265 - 配置项：私钥签名证书类型==>acpsdk.signCert.type==>PKCS12 已加载
+2019-05-23 14:03:43.951 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:275 - 配置项：敏感信息加密证书==>acpsdk.encryptCert.path==>D:/assets/acp_test_enc.cer 已加载
+2019-05-23 14:03:43.951 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:280 - 配置项：验证签名证书路径(这里配置的是目录，不要指定到公钥文件)==>acpsdk.validateCert.dir==>D:/assets/ 已加载
+2019-05-23 14:03:43.951 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:46  - 支付项目启动 
+2019-05-23 14:08:50.492 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 14:08:50.492 INFO  org.springframework.web.servlet.DispatcherServlet Line:524 - Initializing Servlet 'dispatcherServlet'
+2019-05-23 14:08:50.499 INFO  org.springframework.web.servlet.DispatcherServlet Line:546 - Completed initialization in 6 ms
+2019-05-23 14:08:50.553 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 14:08:50.553 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:08:51.673 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 14:08:51.674 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:08:52.035 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=TmbAkWpPkLDowAwPnKf1lNbflhrO8NktSpWVlEhVNQp1J53TMufNte1jCb+LcDPkzTgF6kYg70F3mnb1Hj4Pdua+E5Jk2dc0PxFnXZWPCvk11FbrwLO6BFlYhurCI39tL7rgtjjwLnWhIXtUxk0ISHvn7cYSzUVQHBMEx/CU3J6XA7TYivRyROomlSGkF0rH02Gc9WKLESdSYXFQ2mBYOI8YNpb3Ek8bQlFidUvDLuW0IBR0zAa6g+j4G93SEB9FB9t8hSvWAmp2lYewP6r3TS+w6SgkessHsoOCR8tSSMg+dvyQHZdDAd4OdnkwbBxWd8ffCZkkXAcLh4gfSR5DwQ==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:08:50^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^819ms,632ms,20ms
+2019-05-23 14:08:52.100 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=LodcF5Siwen7R667pi0ObIu9rPWOYkC93hh63xL/o6WJlsZp+04jBvF8tddSRjm8z8JOnc5wvJ+ByLNPkqoa+497tw1UUEPfPQ+nJzRQiDg2Fk733pJqVkp9nLmoEjx7Om9VTovgJEHhm4ICPPMOKJj8AIxYHgxt+U3aSh6oJBELFBro5DgGnho9ijIuGB0k50CHRWCQWCGGrKOLRw1YryCgraw7DHEKgXigp1tNOoQT7mltukLBUsv/IA1wFJDZb/ME6m8mwCVha0j4foMUWYJo2/HrlmmkCpRx0virJbDf5jdxMx8b4w5FramHWwIhQJvsckqEdZi/h0uB27LstA==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:08:51^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^19ms,399ms,8ms
+2019-05-23 14:12:12.203 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 14:12:12.204 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:12:12.580 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=OX6NGZEfIYtHiRkbLfuQDIygjlEzEAUjErPPEruur3PxtO0uXk9rg2qgAQAOw+t/jetUgnMIWZ/ejwYeOmd41LxFwZo3gYO4gX4uXMghXxxVszxl2hexMGD3l3XPwLCEluG+MySIqhY1WRg/CkR0nWpr0acguqxZ0v/jEE6O8LZ/OujVmnnkI4mLtfu/4iB9BvmHyUJKUToUpXLgzoJdRvycZ9rS4ajVlR5fOhFo8hWzxD+AskWsk7Pdx5SNo5aQjgrNPazxG63peDpObhsTngZv2LvZygUQuUmzsNWmKeoRVWGztZ3/cOkji+iU7PI1Z/FiSyO3i/IwY94llHydFA==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:12:12^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^16ms,354ms,6ms
+2019-05-23 14:12:23.187 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 14:12:23.188 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:12:23.574 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=YCVPvtRXYkoDFvOMyniMVue202cYY0CCnB4SPNDuGWxB5Kflmd4wEo1faxK+9TtTzHfUOCV8u+b5y0TYSjVOaLoax5x8zY8PshhItbhGBLMUnP4TOWhR8p08iaz8TpDVpI16qmb7Nd8lELectMF+ydoK0Gm0Gvtvr1Tt0WkrFXpTIaSGNj+lrsBQYy2tifGf9kQk8OHwHXBMbooHoUmeG5HMoNXQQL6SEhzwYwxY7LHmtUgcj3ZyjZvkhddROqbIoZZ4KxORImrM2HpJCKEYUnVT7t+Ds7jhuD2GtVIKZIOdvBJR6yGt9EJ6vprUOWXv1JqFuGLh8qRyuseIPYD6Lg==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:12:23^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^17ms,366ms,3ms
+2019-05-23 14:12:28.898 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-23 14:12:33.617 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:50  - Starting PaymentMixtureApplication on Drally with PID 15956 (F:\IdeaProjects\yunruan\payment_mixture\target\classes started by Drally in F:\IdeaProjects\yunruan\payment_mixture)
+2019-05-23 14:12:33.622 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:679 - The following profiles are active: dev
+2019-05-23 14:12:35.010 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2019-05-23 14:12:35.035 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2019-05-23 14:12:35.036 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 14:12:35.182 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring embedded WebApplicationContext
+2019-05-23 14:12:35.183 INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 1506 ms
+2019-05-23 14:12:35.544 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-23 14:12:35.653 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 14:12:35.716 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:40  - 自定义静态资源目录,这只是个Demo,生产肯定不会暴露
+2019-05-23 14:12:35.770 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Line:56  - Adding welcome page: class path resource [templates/index.html]
+2019-05-23 14:12:35.921 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2019-05-23 14:12:35.940 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 4 custom documentation plugin(s)
+2019-05-23 14:12:35.974 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:12:35.994 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:12:36.003 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:12:36.013 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:12:36.059 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:204 - Tomcat started on port(s): 8080 (http) with context path '/payment_mixture'
+2019-05-23 14:12:36.063 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:59  - Started PaymentMixtureApplication in 3.242 seconds (JVM running for 4.755)
+2019-05-23 14:12:36.091 INFO  com.alipay.demo.trade.config.Configs Line:78  - 配置文件名: zfbinfo.properties
+2019-05-23 14:12:36.092 INFO  com.alipay.demo.trade.config.Configs Line:79  - Configs{支付宝openapi网关: https://openapi.alipaydev.com/gateway.do
+, 支付宝mcloudapi网关域名: http://mcloudmonitor.com/gateway.do
+, pid: 2088102176665657
+, appid: 2016092100564976
+, 商户RSA私钥: MIIEvg******af+xHb
+, 商户RSA公钥: MIIBIj******IDAQAB
+, 支付宝RSA公钥: MIIBIj******IDAQAB
+, 签名类型: RSA2
+, 查询重试次数: 5
+, 查询间隔(毫秒): 5000
+, 撤销尝试次数: 3
+, 撤销重试间隔(毫秒): 2000
+, 交易保障调度延迟(秒): 5
+, 交易保障调度间隔(秒): 900
+}
+2019-05-23 14:12:36.095 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:208 - 从classpath: /F:/IdeaProjects/yunruan/payment_mixture/target/classes/ 获取属性文件acp_sdk.properties
+2019-05-23 14:12:36.096 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:244 - 开始从属性文件中加载配置项
+2019-05-23 14:12:36.096 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:249 - 单证书模式，使用配置文件配置的私钥签名证书，SingleCertMode:[true]
+2019-05-23 14:12:36.097 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:255 - 配置项：私钥签名证书路径==>acpsdk.signCert.path==>D:/assets/acp_test_sign.pfx 已加载
+2019-05-23 14:12:36.097 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:260 - 配置项：私钥签名证书密码==>acpsdk.signCert.pwd 已加载
+2019-05-23 14:12:36.097 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:265 - 配置项：私钥签名证书类型==>acpsdk.signCert.type==>PKCS12 已加载
+2019-05-23 14:12:36.097 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:275 - 配置项：敏感信息加密证书==>acpsdk.encryptCert.path==>D:/assets/acp_test_enc.cer 已加载
+2019-05-23 14:12:36.098 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:280 - 配置项：验证签名证书路径(这里配置的是目录，不要指定到公钥文件)==>acpsdk.validateCert.dir==>D:/assets/ 已加载
+2019-05-23 14:12:36.098 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:46  - 支付项目启动 
+2019-05-23 14:15:08.828 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 14:15:08.829 INFO  org.springframework.web.servlet.DispatcherServlet Line:524 - Initializing Servlet 'dispatcherServlet'
+2019-05-23 14:15:08.838 INFO  org.springframework.web.servlet.DispatcherServlet Line:546 - Completed initialization in 8 ms
+2019-05-23 14:15:08.905 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 14:15:08.905 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:15:10.282 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=h/PTHlDJ3IGb5YJVNFW/clxdz2y/FZJahDvOgQacGC70rUZG0tdu3vUb4zWP2PpkSvOZG984ZkUW1wLNWoSDz+pH6z6PYDYAmERIWMCdy2wAFBYzcOsMHNNxgyKvNsLJ6GVnkGxc7xgNBvMZ3+eIwFJ85mBGB6Q555h73E13ZumnOQ6Cq3N7IACN7VdPFng2OmBTrG6uco/wk5ETtoyZNR9ro3gLYwlvXZWaJv6lD4xAOVNkz7+C5G2aQ1J9vtWSpsCLirUinQiy1JbWltQWDnECJI27YncNglXj1eUWqZv+s46mjKMlTVTTM0cj/Ave0dFJc3inKqIJuGsogZKdUw==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:15:08^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^885ms,457ms,23ms
+2019-05-23 14:22:03.193 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-23 14:22:13.036 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:50  - Starting PaymentMixtureApplication on Drally with PID 16860 (F:\IdeaProjects\yunruan\payment_mixture\target\classes started by Drally in F:\IdeaProjects\yunruan\payment_mixture)
+2019-05-23 14:22:13.040 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:679 - The following profiles are active: dev
+2019-05-23 14:22:13.089 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Line:227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-23 14:22:13.090 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Line:227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-23 14:22:15.008 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2019-05-23 14:22:15.042 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2019-05-23 14:22:15.043 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 14:22:15.186 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring embedded WebApplicationContext
+2019-05-23 14:22:15.187 INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 2097 ms
+2019-05-23 14:22:15.597 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-23 14:22:15.843 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 14:22:15.891 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:57  - LiveReload server is running on port 35729
+2019-05-23 14:22:15.921 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:40  - 自定义静态资源目录,这只是个Demo,生产肯定不会暴露
+2019-05-23 14:22:15.973 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Line:56  - Adding welcome page: class path resource [templates/index.html]
+2019-05-23 14:22:16.175 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2019-05-23 14:22:16.195 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 4 custom documentation plugin(s)
+2019-05-23 14:22:16.229 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:22:16.249 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:22:16.255 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:22:16.262 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:22:16.295 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:204 - Tomcat started on port(s): 8080 (http) with context path '/payment_mixture'
+2019-05-23 14:22:16.299 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:59  - Started PaymentMixtureApplication in 4.028 seconds (JVM running for 5.656)
+2019-05-23 14:22:16.322 INFO  com.alipay.demo.trade.config.Configs Line:78  - 配置文件名: zfbinfo.properties
+2019-05-23 14:22:16.323 INFO  com.alipay.demo.trade.config.Configs Line:79  - Configs{支付宝openapi网关: https://openapi.alipaydev.com/gateway.do
+, 支付宝mcloudapi网关域名: http://mcloudmonitor.com/gateway.do
+, pid: 2088102176665657
+, appid: 2016092100564976
+, 商户RSA私钥: MIIEvg******af+xHb
+, 商户RSA公钥: MIIBIj******IDAQAB
+, 支付宝RSA公钥: MIIBIj******IDAQAB
+, 签名类型: RSA2
+, 查询重试次数: 5
+, 查询间隔(毫秒): 5000
+, 撤销尝试次数: 3
+, 撤销重试间隔(毫秒): 2000
+, 交易保障调度延迟(秒): 5
+, 交易保障调度间隔(秒): 900
+}
+2019-05-23 14:22:16.326 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:208 - 从classpath: /F:/IdeaProjects/yunruan/payment_mixture/target/classes/ 获取属性文件acp_sdk.properties
+2019-05-23 14:22:16.327 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:244 - 开始从属性文件中加载配置项
+2019-05-23 14:22:16.328 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:249 - 单证书模式，使用配置文件配置的私钥签名证书，SingleCertMode:[true]
+2019-05-23 14:22:16.328 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:255 - 配置项：私钥签名证书路径==>acpsdk.signCert.path==>D:/assets/acp_test_sign.pfx 已加载
+2019-05-23 14:22:16.328 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:260 - 配置项：私钥签名证书密码==>acpsdk.signCert.pwd 已加载
+2019-05-23 14:22:16.328 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:265 - 配置项：私钥签名证书类型==>acpsdk.signCert.type==>PKCS12 已加载
+2019-05-23 14:22:16.328 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:275 - 配置项：敏感信息加密证书==>acpsdk.encryptCert.path==>D:/assets/acp_test_enc.cer 已加载
+2019-05-23 14:22:16.329 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:280 - 配置项：验证签名证书路径(这里配置的是目录，不要指定到公钥文件)==>acpsdk.validateCert.dir==>D:/assets/ 已加载
+2019-05-23 14:22:16.330 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:46  - 支付项目启动 
+2019-05-23 14:22:55.055 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 14:22:55.056 INFO  org.springframework.web.servlet.DispatcherServlet Line:524 - Initializing Servlet 'dispatcherServlet'
+2019-05-23 14:22:55.063 INFO  org.springframework.web.servlet.DispatcherServlet Line:546 - Completed initialization in 7 ms
+2019-05-23 14:22:55.122 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 14:22:55.123 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:22:56.500 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=C9vzcE9RgtRSyK2vEMKxKBZNW7gjXhoSo91WldmzQzseMKMH9BOhHnCXWlxPeG/ueDeU3rxCerocxj1UHpfBnLu+0uXR7lXgzwHLK1ZWQAYQz9neu+SuLTXcrYZ2orjaFI3veDY+1OH/cGgUaWcfqZ+KbLuG4pWlkzu4vQQc8SMZ4GZdWpEMxW3igtOD1XCQT+K8FHvTMoMP9Ck0Uup891GyaDAB3mzA9186QKPbtC+SJmgPdOCTjD1J/kLYWbJ5QZj5HT/t4zc3EGb5t9KEl1fA2ag39EHXIa3p6DogsmSsxQt82sMf7I9qEGI5ySqoZRAQ7gb8Rj/5mBpHILjR/A==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:22:55^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^772ms,571ms,20ms
+2019-05-23 14:23:11.772 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 14:23:11.773 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:23:12.485 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=iE3l7ODp1iR+seYP8FMg3sIQfNtmo1vkd5M0ylbeXnvyjcAcrAXXPlfp4Esk+BDx/ewdEm6M5IrLSv/bvFAlM58b1HmgHkIO85zSLpUqwK/fW8WDj4MbRzu/WklIuAsGOGz45d1HWZUdhg2rYmWAATYKJrLPuYXy+cgaGXTLFBhWvVwYRfFOyCxbAmmXmQanUjh5IqJq9TbNc2ElrYX7tL3juMmfC8brUG55hnshw8bnLQHETwq3+FzjJ+rKgy3vdomGxKx7u0b+259kcS1uZPKXBs4xX2+VTHliICXGQS5qpEkGU4tsgAqjper5BMwAGVIfZkwErHr/XZ83EwjONQ==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:23:11^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^20ms,683ms,8ms
+2019-05-23 14:26:09.868 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 14:26:09.869 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:26:10.483 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=K17fCr38/DbtSSQ7jnnaP9nMOqL58mIhafU6qWaAplrMIYQqxV4aPUTayPVigWiGJbYekogKqv0Wej1rEGn4jUdkh6yiyxQi2D52GyKUyWSphoehTAdQ+0WVzF//KfH1RH4kF7AWv/IA22ErF2f9WXVbXMsz5wuTNpvGEnD+lc7pYwMyueMCY6Fy4khXSi1/WEAmEQYTD3BUPw29Z7Yd47X2F7FvkvUugeY1Hx05yhoZ7lwTDkY9WkVYsNFqLvtjjakYz8h/7O7r9XsDBQKseIfEyMYju0Z99PAumRT6dWhXWTkl8BXIipQpu1R/yFv6VjnBCQirxxtVwtnLMzuBAQ==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:26:09^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^19ms,588ms,6ms
+2019-05-23 14:28:40.573 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 14:28:40.574 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:28:41.121 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=gucgMYGJ9gnuNfr3ZAVJgeU8ARafsLF7xJwQR6T7SOEyAbyCqB5XY9vh+WgUKyLYaxtCJowW/BK70t+9ZYh8yo2SDxuDz9y7XxIW4FdBYKahXw4fnNycjhk3yUcopNnnpjcruQCxnTyzBce8Ozhe5SBPimp9547qmZPS1ZOoNCKqXodY0Y5l+VZOzZ4tahv3QYkvKzE3FSAuZRO5Grwz+zG2vKsiPpNe8/Py+Zqym4DXmchjb4wciWAKv9ZLI7led41ZdUcyPGYGcxs5si3MRDZPUiLKsRyTRXsDUB0xtbuOk/JzPuocrwXvcaEabDvwAzSQ3/hJbUd/wsyEdMWi1A==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:28:40^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^16ms,529ms,2ms
+2019-05-23 14:31:58.164 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 14:31:58.165 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:31:58.697 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=KCUeVfDOvRmDFcXqq+fXR2rj0dD8q8LJlUVPlNBhL9YWr4nR21/EH5OJIUeJR8dchx3QgCNACL17yGPBKgcFL/NV0cyX/TaJ+0/Vx8chu1NOCTY+yMFz2TyBCqhg2FzNZ2rTdFEfLO5q77s/PWzkalebKDFQ2q7B6qTU11vIVg3kMUkexKpNgarHhknMFgudFICjMHClprorqyPnTU3PRZV5iI71zv1y+xxUwDm+KmGmrn9aVCv6DCNxDMqNfHLLjd1ViyUQ/zDzImyUUX6ZmNQNGG30NTLVbyGks1HwQ9L2PkprZe7FkbrpiLLYY8/vnRE/dgGeJi4Z/Vpzxa6TgQ==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:31:58^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^19ms,511ms,1ms
+2019-05-23 14:33:54.031 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 14:33:54.032 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:33:54.531 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=F1SdZ0LEU26ofx7B36GPblZdG1NifLBVDH9wgl8XzOZD5YE5GaqU27vCt4JNuLkZO6g0jyEPVJtwBB+xhKtYI9xI0eDZC2F0vLWfeONtIzAVBfioj77qi2/4WfJnOd4Y0YOIca6RPNNMhnLNtQ3A39A0q3xowQVmSTH9an2d/5QTEY2MEJUMNz9q2J4vH0OOcdG3ozOW+4xF7Xvt/iZJAu/EKTiFhNPAKt0W6OouHuUt8l/NEza7TypiBVZRvuhKnI2xsHd2wK70EUaJOplV24zg6S7NIHr2IaqD9CZR9Oq/cvyjClr6bTm6UcGNunt5wBcjzKWNjSMSfZU9j6TIBw==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:33:54^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^18ms,478ms,2ms
+2019-05-23 14:39:12.071 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:205 - 电脑支付
+2019-05-23 14:39:12.072 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:39:12.591 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=dyB7SZ55PtRisCPKR3NVdmG2VOq58sjd4AjDJqJwPCMqb1iLFjTNJn6S33dJtSKHRFw54Tn1rSRNT96Q820TbwRFqrI6Tzbp4Dr+q3MSWnAgBrzAoRo7QsRzGX8AFdSMgve4Q9kZ/dHC809E7UhchJN7n8PJP/Eg8+qQTTPfkXiWiikb50ae9Q9HGkJGENIighWRtdI46Uve4GJaSMndLBdG0TRyV5xFYW/Oe42coQrzTCARF0qwKjED6aAS/THvSgq0krZ5/km5OuN6aucz+6aANWuQ32CFOl162ithl31ObSSjylXtVvD9SKt5NuwaSS2L1lE+oxBA19wljL1SEQ==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:39:12^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^17ms,499ms,2ms
+2019-05-23 14:40:20.126 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-23 14:40:21.083 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:50  - Starting PaymentMixtureApplication on Drally with PID 16860 (F:\IdeaProjects\yunruan\payment_mixture\target\classes started by Drally in F:\IdeaProjects\yunruan\payment_mixture)
+2019-05-23 14:40:21.084 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:679 - The following profiles are active: dev
+2019-05-23 14:40:21.811 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2019-05-23 14:40:21.812 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2019-05-23 14:40:21.813 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 14:40:21.846 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring embedded WebApplicationContext
+2019-05-23 14:40:21.846 INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 758 ms
+2019-05-23 14:40:22.010 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-23 14:40:22.072 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 14:40:22.085 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:57  - LiveReload server is running on port 35729
+2019-05-23 14:40:22.096 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:40  - 自定义静态资源目录,这只是个Demo,生产肯定不会暴露
+2019-05-23 14:40:22.129 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Line:56  - Adding welcome page: class path resource [templates/index.html]
+2019-05-23 14:40:22.288 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2019-05-23 14:40:22.290 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 4 custom documentation plugin(s)
+2019-05-23 14:40:22.304 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:40:22.316 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:40:22.328 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:40:22.341 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 14:40:22.354 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:204 - Tomcat started on port(s): 8080 (http) with context path '/payment_mixture'
+2019-05-23 14:40:22.355 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:59  - Started PaymentMixtureApplication in 1.348 seconds (JVM running for 1091.713)
+2019-05-23 14:40:22.363 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:208 - 从classpath: /F:/IdeaProjects/yunruan/payment_mixture/target/classes/ 获取属性文件acp_sdk.properties
+2019-05-23 14:40:22.365 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:244 - 开始从属性文件中加载配置项
+2019-05-23 14:40:22.365 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:249 - 单证书模式，使用配置文件配置的私钥签名证书，SingleCertMode:[true]
+2019-05-23 14:40:22.365 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:255 - 配置项：私钥签名证书路径==>acpsdk.signCert.path==>D:/assets/acp_test_sign.pfx 已加载
+2019-05-23 14:40:22.366 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:260 - 配置项：私钥签名证书密码==>acpsdk.signCert.pwd 已加载
+2019-05-23 14:40:22.366 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:265 - 配置项：私钥签名证书类型==>acpsdk.signCert.type==>PKCS12 已加载
+2019-05-23 14:40:22.366 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:275 - 配置项：敏感信息加密证书==>acpsdk.encryptCert.path==>D:/assets/acp_test_enc.cer 已加载
+2019-05-23 14:40:22.366 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:280 - 配置项：验证签名证书路径(这里配置的是目录，不要指定到公钥文件)==>acpsdk.validateCert.dir==>D:/assets/ 已加载
+2019-05-23 14:40:22.369 INFO  org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener Line:70  - Condition evaluation unchanged
+2019-05-23 14:40:22.369 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:46  - 支付项目启动 
+2019-05-23 14:40:32.716 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 14:40:32.718 INFO  org.springframework.web.servlet.DispatcherServlet Line:524 - Initializing Servlet 'dispatcherServlet'
+2019-05-23 14:40:32.721 INFO  org.springframework.web.servlet.DispatcherServlet Line:546 - Completed initialization in 3 ms
+2019-05-23 14:40:32.726 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 14:40:32.727 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:40:33.837 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=T+qxUjjii36ZBKqgPnMfds5CJS36XRXqMsMPZehlcpCqvWAlAu1uhhbhN++9+wDdXGc3s9QZ9q8HGuNIiUkhs0N6UVd+4hdvnkmNF4yL4/Y28cNSTTXIhzvfZ2mCgVvBBQOVnvLpwBrK9lUQH1iZ6PtFi9CL++kaZydIwp76oRsbXDBSJoNVyb/L3WO3QAEtTbi4KZo/DjG2uEX/4LdnYEw2e14em8K6HTSTjQFyCNynFmd849McAXa45KZeYelSEorpnbA12bkXb3YOREsTNcKNGcy24EEwlk8AWpDwlGyHaHmGd4IdcvnlBrbLAaz/sbq0RC0lzdSWv1l/KAQ7Lg==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:40:32^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^19ms,1080ms,9ms
+2019-05-23 14:41:39.745 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 14:41:39.746 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:41:40.301 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=XLf9UurmrxTU2sdl6DtuhjOIkOv02u/3+7kFoOWKsRav4dtnKIMDffEPjf+BxcbmDmXF/5i5KUfH17hUke32nHyc8sRXK7YWgG97UFCVoeP3pL4YcymPOfwFsAQGEooNjy8iAwgfVmbeRcMdzeCbFwDyN2ippoYiJwG1DVsmkQuIGvCggQcqsEbVjJq0GTIHDiZlaZdfJQpn6iseFDAzER1eKn6C08V792uw6EG7KzFuuciBa40MG7XOeVlEbhYRjNsYdLoAJ+hCGaEvNTcuClSWgRkRZ38Gdc7VOstI5w+JQPVV7AKJBcQKOq0jq8OLaiLDv8lahD7a40eP0yqSsA==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:41:39^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^19ms,532ms,3ms
+2019-05-23 14:46:57.568 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 14:46:57.569 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:46:57.990 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=kOc8DnrmoAoCdBTnHcNG9CI6JkGTntXpZpvhLWjDV+mfhl61/HFQOGCqIzgKbJGcu6k1n69Y9jzhYuVR1zIx55Orsc3TMzUUyaGCDS0NDa33AJqAvNieOW9JxySlFv4hutNvB1O2B4oNVLzuutcUn7dp21lF9BGOgTDtCIXynGJvy4brR6RAooZuplJ9HcXcoHCDpNSvEKg3oKmPsRHMnvK2+9ozzXP6pov3vxqnXvJqORJCTI3Csko5MBwoRXqmUTLYUmjqXUBvYsRuSKJealaf6LsSsdA0uqC4dv5l7al+w++bk0eAd6BIHDMq/OLAc+icSsopnRUStXIWp94H6A==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:46:57^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^17ms,401ms,3ms
+2019-05-23 14:49:07.842 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 14:49:07.843 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:49:08.559 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=GzDQEzwHDx4zosdB76mQa/YM7dJdtm3vgDS34dZTBSDbHkWhuDn2cPH5h0+BatahMwzOkIMd6XtfwMan229XO/T2GSdycUFNiCAGzuVs6V1+ID8j0Ds/7K1b1EUU2FHtachJPBj6c6GupIF7ht4vEgjc3e8vI4TODgN/uffZOQMGfpTZHXEbQnuw3XRD5t0SOzMhZeKBP6IVSkMm+f/uMuog+Bll4jGvpTff4udVMz9z39nHtr//r6SiIIi/2QM0PyxQo+MD0CdmaB1OiKKF7gwLrSVmzFxfqZprk7dwP/4DqjqA/Muezru4Nec0GlBLSkhwYp9YaftxixqenLVUjg==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:49:07^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^20ms,693ms,2ms
+2019-05-23 14:49:12.637 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 14:49:12.638 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:49:12.994 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=WsTo3uja5E1mY8qQlPCn+PIGa5WcjGloPEerJUupVaUqWEdhNcuVuOD2MiVlUn15o0sr5+FnbycOMYdvtPNfV5qaFxs8JpCE+CIGzvfhdjbtvOO4979gMpstD/71z4I4zH9p4rXPFQHQs/A+RwFoBjWAbFtuypyrGfFnTE5JvzKfm6Enq1/AfZDD29YWNX/sRQU8XFB0HVIql6o3oJgIUSyJwuB8BiG2pU0MiPMCFQBo70KVFYwUlazONmVmH0of5K7KUNOnToTjKsiDEHszw+h2pr8ZHbjedWDUOAACKtlB3Ndzd80bDQ9zq40TcRD1ugk8g1iJsADiv7/8tTBnfA==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:49:12^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^17ms,337ms,1ms
+2019-05-23 14:52:29.710 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 14:52:29.711 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:52:30.133 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=VbJnEIEs1TP7iEXExg5HLHIMPNOccsIDdNGqy+bEiPctjv3RHk/3NpbSY2lcJhCLVNvCsgvORdvuzUWp5Po3d3rGulwlygVr4HDkVNgzYPl6rwMtjgoY6km8jM78U2bv0lEzKQh+I4PJpv4mBJVeI1uKa5JdbAx6Z1nEsIKSViMM46yJsR8+GP9cx5jJ+Yko6UzosYCJbyA/c7TPht5bEcSQWP4Ty+J2aBHqcjBw0ZHhIvyhMrmaL7jZIqXIf0mqOGaV02xrcFHsda+pl2sF7EXwOYF64ZwCkY/fZqxjtWXD7UqpBnRTsYa7vErQvz/J1reEJbTr35CsXu94Rh2//A==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:52:29^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^18ms,402ms,2ms
+2019-05-23 14:54:26.484 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 14:54:26.485 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:54:26.972 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=kLqE44f55Nmpho4vIPHAteXgAjdLBoUh+xCft5bjFLNptcz9vsWVBuoNHzAQAvn7vSAtxuaeGtwiQCsIY3RyQzQgfcl2rFpPp2PwF68Zx6IHPdKmgfiKvKiMBVt2MZJRHHToae2XQld6ou83htHsdrxn9KjQw2r02kO1Z6mhvmdEi7ZzKa9iFFcCv8UjFdFyLJMkq5lPmb1Htd7ZAAxfdRz7PhFBNyi/W4Y7HudqFj/5THAgRGVw4v2i5bxVVJSRJPzXTVe/gtXMwQrxZGdZH1f1hLAMyO3vZ4IYJ9yykzm5xK5ZWmbaQm3L/N0HguJA/O5O4UvX9XOfIPZvOU+FWg==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:54:26^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^19ms,466ms,1ms
+2019-05-23 14:55:40.903 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 14:55:40.905 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 14:55:41.526 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=RIWi3YXUpDVk5fmQGv6S9gbEqcVHAstw60Mdy912LHjx4vsPVs2bUDYEurKSIPWnb3TW+d6NjfCsca3Coz827KAWuRwHU3X3WMTaFyzAQNMYyXYZ2AGIWqCGGoIXylFEErcW/K1Up8LgfHl1MeE/k0teSpb34/k3+fJiBv8Lrzm/RVzHQ1yZtiRJw/OGdw/hu9fQ8CIfxo6dpKAjSpjwEpK0nCjFGNX8P3Me5ZZ2vFzrIVWMpk6/9UCqeMj65yvl3J3xNTadnBr7YfhyIGLi1olYIQ7snU+WjQdusfrPrOZZGe+SJRwarcjpc3E0jFnCFfkirc0pMPqNGh4l0EJpmw==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 14:55:40^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^24ms,595ms,1ms
+2019-05-23 15:01:14.549 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:01:14.550 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:01:14.928 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=fT/mVT18J22lewku9VmqVpQYf5qVpAOSg1qxS4QvfPQAkhIP0ABb4Mnf+InRhv2vOqPE6gBFz22QcsjNmMcQmbrX5LIbL0U9htQ5T6fQv3VJMznQgo2oRjdLm2Wk4aH31ZFAWx+kC5ke4/ACDE3g4sDlhs/TCBQBVqKQRmvpVvKzD6XqwqPi7g5zi1HEPEnHh8VsryhZfQ9K1q52mKulFkirjuk38i7DOgT5Du1D49SOES37RY9DJpTlIcJZp2oSig5xOhaSh50bqXwL+WII74q3ZT1S4M/IdrnxNvyv1qaGsuYO2WiwevJos2IlxAJjYeqif3BC4ua8TsYCZmXyRw==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 15:01:14^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^16ms,358ms,4ms
+2019-05-23 15:01:42.614 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:01:42.615 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:01:43.173 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=F0QQqRR9pO2KWQChIBG1seVGW0xQBIBmAbXN4gF6bzT51+m8OKkeF07X0sERMgOQKuGsHVZKIRR021gcWxgpxKyIFOib/3ry1dDk0SEtofad/F9pqNU/QgN+6qmWlXkjVw1h4NSwYKTidYauK50NrUeyn08g0BuUpdKrf32W313hf2FrMh3SwGB1rXBmoUYTRltK/g5PXMnRWu0BTxqtwSMtXFlOIDKegIgL4tVMsxJBEPFEEJlDCNvKvAzeTSL0EKVivyIOjHZYhOZFxYiBBCK4ETu5yz61/2GjLCMD7ODriypjBm3X2wEvY0QRZkz14r9Pt84A6JSpkWqAGDMq0w==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 15:01:42^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^15ms,540ms,2ms
+2019-05-23 15:01:47.769 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:01:47.771 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:01:48.089 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=ebpdjST268QH3HeHDpSttFeSpTEBHuVYL0qonSGWSuizL0/ZHqX0zb7yjoPM5jpz2Ye4/7o8qp3rvNN2Y7zaVpbeedeimO2YanYrLe7x4HV3PFFcJBUyM6IgdCR9k3GaeO1qYnNI5DNQEew0QiQoUYGbF1pc/Z44cblNbFz5pUGhoPjjK7Dqxug1OwKkSQV0Qw6yDqagTFUZkux0sB9DHYLTLNLFkxnBE6pAtI5LPImqDyS1O8m8HwNssqy4oN+VV+z9nDUmOMauEUjJ6HzYs18QmvdN2VTyOCQqUJ9wehS7bjtSM+0OQzWVZlfV2Wmwx172pt53VmltVTSbFj171Q==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 15:01:47^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^18ms,298ms,2ms
+2019-05-23 15:02:08.675 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:02:08.675 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:02:09.095 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=eGoV46w7q9aTxsxM2ck7j93RtEM491M50QdChTDZGagISG8QtauZAD4588Kda3HlX3zR88iccj4glf4WOa7DK34tetiVKwJS+ZQTJVChrVrKF0tdJA4Sfzj2KddCXzthgH383JhuRAt/8C7rXB/KNGiv9bXRH2tSwqVP2NA6tjiMXJ/WJMKWJplUrqpaY43Gq3RIu1VspYzI1lCuwYjB2a9b0+274Mf7IHqQ9N3gMGWXkUxVrtyL5YST+K7I5MF01dCqJYxvCcXneQ0cK4p0v1XJ4JgYzxN9mKGgt1xxRS1ixyUp72uvmdCt9JQopOdPh13e7oYns2NcQny47xe63A==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 15:02:08^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^15ms,402ms,2ms
+2019-05-23 15:03:09.809 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:03:09.810 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:03:10.228 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=QdwlAJj6eEAvF1O05LFSPRcDF5IFs+y4NnfJ7EAo8+614aUj9VxlzPCnRxOHil5sSFyVUankAldfCmG5z6WZ6Tw1J3UaFgIxH1ZYqzHqliu00E8IwkKi2u5D3r1LorHKZC4QuA3sY0CFn8xgQs51p4YQunU3Lvz47Jv3WM2nMo9oVTfb83BKeiNc3IRJW4NibYF6YD4abYpGpuC8m/Zp4kxfEAiAre6pNq5iRTKJ6TaZ/Dm2NAxEpzUoQcLbtBYxzAdYJSCbxUu3t8uK4mDwGBv0xFs2uDILwxTaJiBPN9od6d7EV8fyTk/YrF3mvNyYUvuLjnsZJmbWReEpVsLagg==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 15:03:09^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^19ms,398ms,1ms
+2019-05-23 15:04:13.480 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:04:13.482 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:04:38.800 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:04:38.801 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:05:11.091 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:05:13.834 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:15:28.123 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:15:28.124 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:16:07.813 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:16:07.814 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:16:08.252 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=ivK4EVi9w9oe8XsH4ia54H/I28C0v1c8RLQ1l1BJnhLJSdEaV6v9u99TbCxuaKZClV/L5UNL4xf9MwfFx+KloDUwLWfL+dW10eflUjO9s57yPuSs6C+W/tDHOSL9gV5UUi7iKQC/W4RgiJ6qZ/AbJUht8EghSsbiqfqdy7CKVRQ0J93XSYuAHkn2F8j8wi7X2iHMCCb51GD3OHb+3QFyNTtJOU7bk2LYw5p3J2gnf6zL6EJEghdlYpdoQgic/OIWzio6NfkC1l3sdiulSiYO1cNTzXf+i8YwPgzz6VSvhozF0TFycs87Rbd/XkJh1Vbbiv6ri4/W0HLuEI9DJf5M4Q==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 15:16:07^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^18ms,419ms,1ms
+2019-05-23 15:18:32.571 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:18:32.572 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:18:44.754 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:18:44.755 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:18:45.153 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=PEOyFp32GMX2uecNbRMG73W8vHUGP+JI0wsewOjYXyM/M+5tr7+y1HSRJ/b3dp54vUCkaGjOEunAEO/Rco/h5iKVXZWa4rmDbSJ0ubgTv/ujqRA1B8mCAX62QdnJ7MXUgnAjAhxUFf4jj/Q3eplFgnFjfm9RYzGorgdtJHLvQGOvFole/rK7rsYgKd3rB4Hw7c985iRwN10+EmdbjoQ0N5FyEbBKRepsiN9J3nm2g6QfrusK/UsBGtJFZoRx1ppnWkSsvEWA/eYdMByrnYj4eZNEN7oqP4EJE/bpSXWRiKM4pj22bzkDZevg6N/mvb1awMWTuz8+QL8Kf1rGuq5RNw==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 15:18:44^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^20ms,376ms,2ms
+2019-05-23 15:19:22.280 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:19:22.282 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:19:22.688 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=MAqC1XesDmUm6F2Efod/ZmfSaLEx90viPWriM8aBDg0A2Rs49XwdvfmbGcpWwvbizdE2KVj9DrW//zCmodQDZyNju8tUROhVhRrlroy1MjXtrmM7p6uM+8aLRwnBrE2Xe6n3/1h7PWCkJK3UY2EZ4fC32fg65pin3OAaTYRZhmvf8YE5nWLOhGgfehoMpgKEMLjbqb7P5UrRKI7fft3K1KCdR6wrS2JGdIROS4PUvF1PewBp4+FpXSR39u4ke0EnO75vvgbaWj1rDVJs1gRLrdoYLL4lgnUPfdb5mw9BbhLWSIGuIhqFxrIZ+//bvDw8PI1p66gOIReWeVus4UWL8Q==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 15:19:22^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^15ms,387ms,3ms
+2019-05-23 15:19:37.283 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:19:37.284 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:19:37.677 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=E2Mr1R24yAIoQSMwTnZk0s5UoSHsky/2ede0oejx9qelp0cxDWO5E5GQvx3IVPrIXuhIunQz/ZEpgBg1Q2phJtTn7BbBr0Xgk6fVz/eBQIOnOBkUlaWH7iVxl8xCIXCzFLQWzNotd71KKx6EtoolzV+937AbKYkoAQYW4wcpvcgs1YNbj/chrIUWrNzv0KiPV35xmr4encZ42OegTty3d/0BV7bgxDjQ2iN4DV3RV+KAYXq2xbF4NV9jolFswLRkTyq/Kdx/BasoWEZul8zZQYnCSMn3YCcHgbQKzr/zW4BCPqhCN0vSRGVHGw+pGOGdqKEv6oGUWJ0sdHtxCgfRBA==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 15:19:37^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^15ms,377ms,1ms
+2019-05-23 15:19:41.557 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:19:41.558 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:19:41.900 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=Wg+7xMKUtAGoisHKrANVMVBxQFkas19aECmvrh7D4XLOdaEsUb1rVdK8tAwUWZ1wDLWvQDdcC1Ogvj1YATcb7vBZGHTZ+XzWFxQCtXq3BPYtY0urligjAvsOe2rFr0TBGt8d/XwBK0lNoaAjxVRerIWBg7fIpqDw/SrbQ7R+TGWNSlcekWKzJCiTpgHz93q3Qw9Z2dgZ3jYa4Q/2wv5cUWubAlWI5Iqbb37yc21mvOGMW/4gvAGxMUR4y2QmqKoLtB02dFgFk3cfQXgFrvkw64VysoyosM5YiP+nMPcolT6v7jZmA8rD+lTd9T0CL/xFSUA8lqITo133Lk5xyLz32Q==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 15:19:41^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^26ms,314ms,1ms
+2019-05-23 15:20:02.646 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:20:02.647 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:20:03.221 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.query&sign=RS8/2EX/gnyoNHmH4PU7KLPEMl8YGqNN1HotTfJp5BmnZ0YK4EjfajNG3VQtQ5cwxAe9YJmmZRUidEMhm/M8ZbImHJcEH7cNHgbPX52gYc2lqyyqA6D6rSxkXNvnYZRfUOB4bwhgFkg5ho84aAa+fbwZ7/nsdaUlApg5p1+Pe8DW8XLUhrsoVIrbIIba5qN3xUaYeQ8DIRQigYJ9i4LzlXVO/ZjybrcL3GhEHB1XJ6KQhKLZazKOvNg7JmIN6fzDxoDxK8zakJ3ALQwleHXkEIq53fBA2OlPUFBzJwFFr1E7yJ5YhzyYSWPzqtIcSoQ2uS6QsCOY27JP5g8nkXbolg==&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 15:20:02^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123322"}^_^16ms,557ms,1ms
+2019-05-23 15:20:16.020 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:68  - 二维码支付
+2019-05-23 15:20:19.749 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:72  - 订单号：201952311123328生成支付宝支付码
+2019-05-23 15:20:19.827 INFO  com.alipay.demo.trade.service.impl.AlipayTradeServiceImpl Line:100 - trade.precreate bizContent:{"out_trade_no":"201952311123328","seller_id":"","total_amount":"1.00","subject":"科帮网测试支付","body":"","store_id":"test_store_id","extend_params":{"sys_service_provider_id":"2088100200300400500"},"timeout_express":"120m"}
+2019-05-23 15:20:20.231 INFO  sdk.biz.err Line:366 - Summary^_^10000^_^null^_^ProtocalMustParams:charset=utf-8&method=alipay.trade.precreate&sign=YAWh94E39k643htsEOWUGuAqOBBThdTDdkrGBX1gJyc/OVmkOyTQGYd993tPt2H9lyntLmDWhM1g35dPL1wkRyzskTLJSmRlymuuwQyBi4rcABPVJU/Mt2x/uUkykXGYA3Aatu7oQBpVn7fKwcTIw+55mGHKe60YM6qvzHq4I5049+wIdIUqVDUqqh1HPPWazyzbphs1Nulr+Ea4Oq1KERL5TsXbSJymNVO+cPnVDIfhh4ZyV1ortcn4wouP0paOoWl+TCApWpoGqIodgK79tzYGtnZZz/PHPReFBdtFjcomYf6PYtQ+7SDC2j2T7Pe6G2Pbgyg63xfPi9pSUiCaFQ==&notify_url=http://ty3ebd.natappfree.cc/payment_mixture/alipay/pay&version=1.0&app_id=2016092100564976&sign_type=RSA2&timestamp=2019-05-23 15:20:19^_^ProtocalOptParams:alipay_sdk=alipay-sdk-java-3.3.0&format=json^_^ApplicationParams:biz_content={"out_trade_no":"201952311123328","seller_id":"","total_amount":"1.00","subject":"科帮网测试支付","body":"","store_id":"test_store_id","extend_params":{"sys_service_provider_id":"2088100200300400500"},"timeout_express":"120m"}^_^15ms,384ms,4ms
+2019-05-23 15:20:20.232 INFO  com.alipay.demo.trade.service.impl.AlipayTradeServiceImpl Line:34  - {"alipay_trade_precreate_response":{"code":"10000","msg":"Success","out_trade_no":"201952311123328","qr_code":"https:\/\/qr.alipay.com\/bax04223v84dhq2uxw9l00f3"},"sign":"UT58VhOEj0jezrEyXUR/rLTGxoRTKmtLx9wE9nYHSELfCJE8nCcOt9Za0NmjsQJW3M6P2pu3ElneSfR7zm6+UO7Qs5sn+VTBPNLksZmNHuDDn0XTGcLzMjcmcsV9BZffats9QMCU2nrZVpA4DQ7WWnUtqWM1euVsAa3bm81rYjdRw8aYBUHDPJJodiFxzsMNttYbij12B2e2yvJ2aQG6SYVb+tTIJK0jHB6r5cbuHKgUtctGF+dSs3l5j/bjSO3a/Ylfy5EBfUaPRCQfRHXOI7wbHMfv92w9p1gq1PsireiK/5oiZ3av1Gu4ZZqOB8fOzeHaUPx95gg5OngeDoDCZQ=="}
+2019-05-23 15:20:20.234 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:106 - 支付宝预下单成功: )
+2019-05-23 15:20:20.235 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:133 - code:10000, msg:Success
+2019-05-23 15:20:20.235 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:137 - body:{"alipay_trade_precreate_response":{"code":"10000","msg":"Success","out_trade_no":"201952311123328","qr_code":"https:\/\/qr.alipay.com\/bax04223v84dhq2uxw9l00f3"},"sign":"UT58VhOEj0jezrEyXUR/rLTGxoRTKmtLx9wE9nYHSELfCJE8nCcOt9Za0NmjsQJW3M6P2pu3ElneSfR7zm6+UO7Qs5sn+VTBPNLksZmNHuDDn0XTGcLzMjcmcsV9BZffats9QMCU2nrZVpA4DQ7WWnUtqWM1euVsAa3bm81rYjdRw8aYBUHDPJJodiFxzsMNttYbij12B2e2yvJ2aQG6SYVb+tTIJK0jHB6r5cbuHKgUtctGF+dSs3l5j/bjSO3a/Ylfy5EBfUaPRCQfRHXOI7wbHMfv92w9p1gq1PsireiK/5oiZ3av1Gu4ZZqOB8fOzeHaUPx95gg5OngeDoDCZQ=="}
+2019-05-23 15:30:35.075 INFO  com.payment.payment_mixture.weixinpay.controller.WeixinPayController Line:57  - 二维码支付(模式一)
+2019-05-23 15:31:23.098 INFO  com.payment.payment_mixture.weixinpay.controller.WeixinPayController Line:70  - 二维码支付(模式二)
+2019-05-23 15:31:23.100 INFO  com.payment.payment_mixture.weixinpay.service.impl.WeixinPayServiceImpl Line:39  - 订单号：2019523153025583生成微信支付码
+2019-05-23 15:31:23.442 INFO  com.payment.payment_mixture.weixinpay.service.impl.WeixinPayServiceImpl Line:78  - (订单号：2019523153025583生成微信支付码(通信)失败:mch_id参数格式错误
+2019-05-23 15:33:02.182 INFO  com.payment.payment_mixture.weixinpay.controller.WeixinMobilePayController Line:50  - H5支付(需要公众号内支付)
+2019-05-23 15:34:27.720 INFO  com.payment.payment_mixture.weixinpay.controller.WeixinMobilePayController Line:50  - H5支付(需要公众号内支付)
+2019-05-23 15:34:32.929 INFO  com.payment.payment_mixture.weixinpay.controller.WeixinMobilePayController Line:50  - H5支付(需要公众号内支付)
+2019-05-23 15:34:39.241 INFO  com.payment.payment_mixture.weixinpay.controller.WeixinPayController Line:57  - 二维码支付(模式一)
+2019-05-23 15:34:43.197 INFO  com.payment.payment_mixture.weixinpay.controller.WeixinPayController Line:70  - 二维码支付(模式二)
+2019-05-23 15:34:43.197 INFO  com.payment.payment_mixture.weixinpay.service.impl.WeixinPayServiceImpl Line:39  - 订单号：2019523153439686生成微信支付码
+2019-05-23 15:34:43.367 INFO  com.payment.payment_mixture.weixinpay.service.impl.WeixinPayServiceImpl Line:78  - (订单号：2019523153439686生成微信支付码(通信)失败:mch_id参数格式错误
+2019-05-23 15:37:49.936 INFO  com.payment.payment_mixture.alipay.controller.AliPayController Line:206 - 电脑支付
+2019-05-23 15:37:49.937 INFO  com.payment.payment_mixture.alipay.service.impl.AliPayServiceImpl Line:337 - 支付宝支付订单查询
+2019-05-23 15:56:38.512 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-23 15:56:43.704 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:50  - Starting PaymentMixtureApplication on Drally with PID 6116 (F:\IdeaProjects\yunruan\payment_mixture\target\classes started by Drally in F:\IdeaProjects\yunruan\payment_mixture)
+2019-05-23 15:56:43.709 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:679 - The following profiles are active: dev
+2019-05-23 15:56:43.772 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Line:227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-23 15:56:43.773 INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Line:227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-23 15:56:45.568 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2019-05-23 15:56:45.601 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2019-05-23 15:56:45.602 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 15:56:45.779 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring embedded WebApplicationContext
+2019-05-23 15:56:45.780 INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 2007 ms
+2019-05-23 15:56:46.293 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-23 15:56:46.519 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 15:56:46.570 INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:57  - LiveReload server is running on port 35729
+2019-05-23 15:56:46.613 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:40  - 自定义静态资源目录,这只是个Demo,生产肯定不会暴露
+2019-05-23 15:56:46.682 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping Line:56  - Adding welcome page: class path resource [templates/index.html]
+2019-05-23 15:56:46.874 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2019-05-23 15:56:46.891 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 4 custom documentation plugin(s)
+2019-05-23 15:56:46.924 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 15:56:46.944 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 15:56:46.951 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 15:56:46.958 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-23 15:56:46.998 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:204 - Tomcat started on port(s): 8080 (http) with context path '/payment_mixture'
+2019-05-23 15:56:47.002 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:59  - Started PaymentMixtureApplication in 4.174 seconds (JVM running for 5.755)
+2019-05-23 15:56:47.027 INFO  com.alipay.demo.trade.config.Configs Line:78  - 配置文件名: zfbinfo.properties
+2019-05-23 15:56:47.028 INFO  com.alipay.demo.trade.config.Configs Line:79  - Configs{支付宝openapi网关: https://openapi.alipaydev.com/gateway.do
+, 支付宝mcloudapi网关域名: http://mcloudmonitor.com/gateway.do
+, pid: 2088102176665657
+, appid: 2016092100564976
+, 商户RSA私钥: MIIEvg******af+xHb
+, 商户RSA公钥: MIIBIj******IDAQAB
+, 支付宝RSA公钥: MIIBIj******IDAQAB
+, 签名类型: RSA2
+, 查询重试次数: 5
+, 查询间隔(毫秒): 5000
+, 撤销尝试次数: 3
+, 撤销重试间隔(毫秒): 2000
+, 交易保障调度延迟(秒): 5
+, 交易保障调度间隔(秒): 900
+}
+2019-05-23 15:56:47.031 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:208 - 从classpath: /F:/IdeaProjects/yunruan/payment_mixture/target/classes/ 获取属性文件acp_sdk.properties
+2019-05-23 15:56:47.032 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:244 - 开始从属性文件中加载配置项
+2019-05-23 15:56:47.032 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:249 - 单证书模式，使用配置文件配置的私钥签名证书，SingleCertMode:[true]
+2019-05-23 15:56:47.033 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:255 - 配置项：私钥签名证书路径==>acpsdk.signCert.path==>D:/assets/acp_test_sign.pfx 已加载
+2019-05-23 15:56:47.033 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:260 - 配置项：私钥签名证书密码==>acpsdk.signCert.pwd 已加载
+2019-05-23 15:56:47.033 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:265 - 配置项：私钥签名证书类型==>acpsdk.signCert.type==>PKCS12 已加载
+2019-05-23 15:56:47.033 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:275 - 配置项：敏感信息加密证书==>acpsdk.encryptCert.path==>D:/assets/acp_test_enc.cer 已加载
+2019-05-23 15:56:47.033 INFO  com.payment.payment_mixture.unionpay.util.SDKUtil Line:280 - 配置项：验证签名证书路径(这里配置的是目录，不要指定到公钥文件)==>acpsdk.validateCert.dir==>D:/assets/ 已加载
+2019-05-23 15:56:47.035 INFO  com.payment.payment_mixture.PaymentMixtureApplication Line:46  - 支付项目启动 
+2019-05-23 15:59:24.415 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/payment_mixture] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 15:59:24.416 INFO  org.springframework.web.servlet.DispatcherServlet Line:524 - Initializing Servlet 'dispatcherServlet'
+2019-05-23 15:59:24.423 INFO  org.springframework.web.servlet.DispatcherServlet Line:546 - Completed initialization in 6 ms
+2019-05-23 18:55:28.876 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:208 - Shutting down ExecutorService 'applicationTaskExecutor'
